@@ -43,6 +43,7 @@
   "name": "OompahME",
   "url": "https://oompah.me/",
   "email": "hello@oompah.me",
+  "telephone": "+1-207-819-1358",
   "image": "https://oompah.me/assets/og-image.jpg",
   "description": "A signature polka quintet and a professional musical contractor in Portland, Maine.",
   "genre": ["Polka", "Jazz", "Chamber", "Holiday"],
@@ -89,10 +90,10 @@
     </div>
     <div class="hero__grid">
       <div class="hero__copy">
-        <h1 id="hero-title" class="hero__title">Maine’s hardest-working brass.</h1>
-        <p class="hero__lede">A signature polka quintet and a professional musical contractor — from the first OOMP under the Oktoberfest tent to a string-and-trumpet wedding processional.</p>
+        <h1 id="hero-title" class="hero__title">OompahME’s home on the web.</h1>
+        <p class="hero__lede">We’re a group of musicians who met playing jazz, dove into polka, and can now play just about anything you want. We take the music seriously, and we have a great time playing it.</p>
         <div class="hero__actions">
-          <a href="#book" class="btn btn--solid">Check availability →</a>
+          <a href="#book" class="btn btn--solid">Reach out →</a>
           <a href="#songs" class="btn btn--outline">See the songbook</a>
         </div>
       </div>
@@ -122,7 +123,7 @@
 <section id="ensembles" class="section wrap" aria-labelledby="ensembles-title">
   <div class="section-intro">
     <h2 id="ensembles-title" class="h2">Rooted in tradition. Defined by versatility.</h2>
-    <p>We began under the high tents of Oktoberfest and promptly refused to stay in our lane. Today we field our core quintet and contract custom ensembles from Portland’s finest freelance talent.</p>
+    <p>We’re good musicians who really dive into whatever we’re playing. We started out with jazz and polka, but each of us is talented and versatile well beyond that. And if the core five can’t cover it, we have a wide network of musicians who can help.</p>
   </div>
   <div class="ensembles">
     <article class="ensemble">
@@ -151,7 +152,6 @@
   <div class="wrap section">
     <div class="songbook__head">
       <div class="songbook__intro">
-        <p class="eyebrow eyebrow--mustard">The songbook</p>
         <h2 id="songs-title" class="h2">Crowd favorites</h2>
         <p class="songbook__lede">A sampling of our most-requested tunes. Ask about the full catalog or a special request.</p>
       </div>
@@ -339,61 +339,13 @@
 <section id="book" class="booking" aria-labelledby="book-title">
   <div class="wrap section booking__grid">
     <div class="booking__copy">
-      <p class="eyebrow">Booking inquiries</p>
       <h2 id="book-title" class="booking__title">Let’s hit the right note.</h2>
-      <p class="booking__lede">Tell us the date, the place and the occasion. We’ll recommend the right ensemble and reply within two business days.</p>
-      <a href="mailto:hello@oompah.me" class="booking__email">hello@oompah.me</a>
+      <p class="booking__lede">Tell us the date, the place and the occasion, and we’ll recommend the right ensemble. We’re based in Portland and happy to meet for coffee anywhere near Deering Center.</p>
     </div>
 
     <div class="booking__panel">
-      <div class="thanks" id="booking-thanks" tabindex="-1" hidden>
-        <p class="thanks__title">Danke!</p>
-        <p>Your inquiry is in. We’ll be in touch shortly.</p>
-        <button type="button" class="btn-small" id="booking-reset">Send another</button>
-      </div>
-
-      <!-- TODO: Replace FORM_ID with your Formspree form ID (see README.md, "Booking form"). -->
-      <form class="booking-form" id="booking-form" action="https://formspree.io/f/FORM_ID" method="POST">
-        <div class="booking-form__row">
-          <div class="field">
-            <label for="f-name">Name</label>
-            <input id="f-name" name="name" type="text" autocomplete="name" required>
-          </div>
-          <div class="field">
-            <label for="f-email">Email</label>
-            <input id="f-email" name="email" type="email" autocomplete="email" required>
-          </div>
-          <div class="field">
-            <label for="f-date">Event date</label>
-            <input id="f-date" name="date" type="date">
-          </div>
-          <div class="field">
-            <label for="f-type">Occasion</label>
-            <select id="f-type" name="type">
-              <option>Oktoberfest / beer garden</option>
-              <option>Wedding ceremony</option>
-              <option>Wedding reception</option>
-              <option>Corporate event</option>
-              <option>Holiday party</option>
-              <option>Festival / street fair</option>
-              <option>Private party</option>
-              <option>Something else</option>
-            </select>
-          </div>
-        </div>
-        <div class="field">
-          <label for="f-message">Venue &amp; details</label>
-          <textarea id="f-message" name="message" rows="4" placeholder="Location, guest count, songs you’d love to hear…"></textarea>
-        </div>
-        <!-- Honeypot: hidden from people, bots fill it in and Formspree discards the submission. -->
-        <div class="hp" aria-hidden="true">
-          <label for="f-gotcha">Leave this field empty</label>
-          <input id="f-gotcha" type="text" name="_gotcha" tabindex="-1" autocomplete="off">
-        </div>
-        <input type="hidden" name="_subject" value="New booking inquiry from oompah.me">
-        <button type="submit" class="booking-form__submit">Send inquiry →</button>
-        <p class="booking-form__error" id="booking-error" role="alert" hidden></p>
-      </form>
+      <a href="mailto:hello@oompah.me" class="booking__button">Email hello@oompah.me →</a>
+      <p class="booking__phone">Or call <a href="tel:+12078191358">207-819-1358</a></p>
     </div>
   </div>
 </section>
@@ -405,6 +357,7 @@
     <p class="logo logo--footer">Oompah<span>ME</span></p>
     <p>Made with love in Portland, Maine</p>
     <a href="mailto:hello@oompah.me">hello@oompah.me</a>
+    <a href="tel:+12078191358">207-819-1358</a>
   </div>
 </footer>
 </body>

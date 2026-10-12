@@ -4,9 +4,9 @@ Static website for **OompahME**, a polka quintet and musical contractor in Portl
 It is plain HTML, CSS and JavaScript, with no build step and no dependencies. GitHub Pages serves the files exactly as they are in the repo.
 
 ```
-index.html      All page content: copy, song list, band bios, booking form
+index.html      All page content: copy, song list, band bios, booking section
 styles.css      All styling; colors and fonts are CSS variables at the top
-script.js       Mobile menu, songbook filter, booking form submit (optional; the page works without it)
+script.js       Mobile menu and songbook filter (optional; the page works without it)
 404.html        "Page not found" page (GitHub Pages serves it automatically)
 CNAME           Custom domain for GitHub Pages (oompah.me)
 .nojekyll       Tells GitHub Pages to serve files as-is (skips Jekyll)
@@ -78,20 +78,9 @@ Fonts come from Google Fonts: Big Shoulders Display (headlines), Archivo (body) 
 
 ---
 
-## Booking form (Formspree)
+## Booking
 
-GitHub Pages can't process form submissions, so the form posts to [Formspree](https://formspree.io).
-
-1. Create a free Formspree account and a new form. Set the notification email to `hello@oompah.me`.
-2. Copy the form ID: the part after `/f/` in the endpoint, e.g. `https://formspree.io/f/xyzabcd` gives you `xyzabcd`.
-3. In `index.html`, find `TODO: Replace FORM_ID` and change
-   `action="https://formspree.io/f/FORM_ID"` to `action="https://formspree.io/f/xyzabcd"`.
-4. In Formspree's form settings, restrict submissions to the `oompah.me` domain.
-
-How it behaves:
-- **With JavaScript:** submits in the background and shows the "Danke!" confirmation in place of the form. If the submission fails, or the form ID hasn't been set yet, the visitor sees an error with a `mailto:hello@oompah.me` link that pre-fills an email with what they typed.
-- **Without JavaScript:** a normal form post to Formspree, which shows its own thank-you page.
-- **Spam:** a hidden `_gotcha` honeypot field. Formspree silently drops any submission that fills it in.
+The booking section is currently an email button (`mailto:hello@oompah.me`) and a phone link, with no form. If a form is added later, GitHub Pages can't process submissions itself, so it would need a service such as [Formspree](https://formspree.io).
 
 ---
 
