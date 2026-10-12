@@ -342,6 +342,9 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .booking__button:hover { background: var(--muted); color: var(--paper); }
 .booking__phone { font-size: 20px; text-align: center; }
 .booking__phone a { font-weight: 600; }
+.booking__related { margin-top: 12px; padding-top: 20px; border-top: var(--rule); font-size: 16px; line-height: 1.5; text-align: center; }
+.booking__related ul { list-style: none; margin-top: 8px; display: flex; flex-direction: column; gap: 4px; }
+.booking__related a { font-weight: 600; }
 
 /* ---------- Footer ---------- */
 .site-footer { background: var(--ink); color: var(--muted-dark); }
