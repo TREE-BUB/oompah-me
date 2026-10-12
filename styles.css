@@ -227,7 +227,6 @@ button, input, select, textarea { font: inherit; color: inherit; }
   display: flex; flex-direction: column; gap: 16px;
   border-bottom: 1px solid var(--ink);
 }
-.ensemble__tag { font-family: var(--font-mono); font-size: 12px; letter-spacing: 2px; color: var(--accent); }
 .ensemble__title {
   font-family: var(--font-display); font-weight: 800; font-size: 40px;
   line-height: .95; text-transform: uppercase;
