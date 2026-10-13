@@ -2,8 +2,6 @@
 (function () {
   'use strict';
 
-  var CONTACT_EMAIL = 'hello@oompah.me';
-
   /* ---------- Mobile nav toggle ---------- */
   var toggle = document.querySelector('.nav-toggle');
   var nav = document.getElementById('site-nav');
@@ -75,83 +73,5 @@
     });
 
     filterBar.hidden = false;
-  }
-
-  /* ---------- Booking form (Formspree) ---------- */
-  var form = document.getElementById('booking-form');
-  var thanks = document.getElementById('booking-thanks');
-  var reset = document.getElementById('booking-reset');
-  var errorBox = document.getElementById('booking-error');
-
-  function fieldValue(name) {
-    var el = form.elements[name];
-    return el ? el.value.trim() : '';
-  }
-
-  function mailtoHref() {
-    var body = [
-      'Name: ' + fieldValue('name'),
-      'Email: ' + fieldValue('email'),
-      'Event date: ' + fieldValue('date'),
-      'Occasion: ' + fieldValue('type'),
-      '',
-      'Venue & details:',
-      fieldValue('message')
-    ].join('\n');
-    return 'mailto:' + CONTACT_EMAIL +
-      '?subject=' + encodeURIComponent('Booking inquiry') +
-      '&body=' + encodeURIComponent(body);
-  }
-
-  function showThanks() {
-    form.hidden = true;
-    errorBox.hidden = true;
-    thanks.hidden = false;
-    thanks.focus();
-  }
-
-  function showError() {
-    errorBox.textContent = '';
-    errorBox.appendChild(document.createTextNode('Sorry, that didn’t go through. Please '));
-    var a = document.createElement('a');
-    a.href = mailtoHref();
-    a.textContent = 'email us at ' + CONTACT_EMAIL;
-    errorBox.appendChild(a);
-    errorBox.appendChild(document.createTextNode(' and your details will be filled in for you.'));
-    errorBox.hidden = false;
-  }
-
-  if (form && thanks && window.fetch && window.FormData) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var submit = form.querySelector('[type="submit"]');
-
-      // Honeypot tripped: pretend success, send nothing.
-      if (fieldValue('_gotcha')) { form.reset(); showThanks(); return; }
-
-      // Form ID not configured yet: go straight to the email fallback.
-      if (/\/FORM_ID$/.test(form.action)) { showError(); return; }
-
-      submit.disabled = true;
-      fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: { Accept: 'application/json' }
-      }).then(function (res) {
-        if (!res.ok) throw new Error('HTTP ' + res.status);
-        form.reset();
-        showThanks();
-      }).catch(function () {
-        showError();
-      }).then(function () {
-        submit.disabled = false;
-      });
-    });
-
-    reset.addEventListener('click', function () {
-      thanks.hidden = true;
-      form.hidden = false;
-      document.getElementById('f-name').focus();
-    });
   }
 })();
