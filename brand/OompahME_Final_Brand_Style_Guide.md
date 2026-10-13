@@ -250,7 +250,7 @@ This replaces the earlier Big Shoulders Display / all-caps specification.
 - Be specific about the music and the musicians; avoid unsupported superlatives.
 - Use humor as a small flourish, not as the only message.
 - Present breadth clearly: polka, jazz, chamber music, weddings and special events.
-- Prefer `Book a date`, `See the songbook`, and `Reach out` over vague calls to action.
+- Prefer `Book a date`, `See the set list`, and `Reach out` over vague calls to action.
 
 **Contact:** [hello@oompah.me](mailto:hello@oompah.me) · **207-819-1358**.  
 **Location:** Based in Portland, Maine; happy to meet for coffee near Deering Center.

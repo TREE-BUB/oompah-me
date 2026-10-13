@@ -81,7 +81,7 @@
     <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav id="site-nav" class="site-nav" aria-label="Main">
       <a href="#ensembles">Ensembles</a>
-      <a href="#songs">Songbook</a>
+      <a href="#songs">Set List</a>
       <a href="#band">The Band</a>
       <a href="#book" class="site-nav__cta">Book a date</a>
     </nav>
@@ -102,7 +102,7 @@
         <p class="hero__lede">We’re a group of musicians who met playing jazz, dove into polka, and can now play just about anything you want. We take the music seriously, and we have a great time playing it.</p>
         <div class="hero__actions">
           <a href="#book" class="btn btn--solid">Reach out →</a>
-          <a href="#songs" class="btn btn--outline">See the songbook</a>
+          <a href="#songs" class="btn btn--outline">See the set list</a>
         </div>
       </div>
       <picture>
@@ -169,7 +169,7 @@
   <div class="wrap section">
     <div class="songbook__head">
       <div class="songbook__intro">
-        <h2 id="songs-title" class="h2">Crowd favorites</h2>
+        <h2 id="songs-title" class="h2">Set List</h2>
         <p class="songbook__lede">A sampling of our most-requested tunes. Ask about the full catalog or a special request.</p>
       </div>
       <!-- Filter buttons are built by script.js from the genre groups below. -->
@@ -379,9 +379,21 @@
 <footer class="site-footer">
   <div class="wrap site-footer__inner">
     <img class="logo-badge" src="assets/brand/badge-footer.png" width="240" height="240" loading="lazy" alt="OompahME: polka, jazz, chamber, holiday">
-    <p>Made with love in Portland, Maine</p>
-    <a href="mailto:hello@oompah.me">hello@oompah.me</a>
-    <a href="tel:+12078191358">207-819-1358</a>
+    <div class="site-footer__contact">
+      <p>Made with love in Portland, Maine</p>
+      <a href="mailto:hello@oompah.me">hello@oompah.me</a>
+      <a href="tel:+12078191358">207-819-1358</a>
+    </div>
+    <nav class="site-footer__map" aria-label="Site map">
+      <p class="site-footer__map-title">Site map</p>
+      <ul>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#ensembles">Ensembles</a></li>
+        <li><a href="#songs">Set List</a></li>
+        <li><a href="#band">The Band</a></li>
+        <li><a href="#book">Book a date</a></li>
+      </ul>
+    </nav>
   </div>
 </footer>
 </body>
