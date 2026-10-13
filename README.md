@@ -6,7 +6,7 @@ It is plain HTML, CSS and JavaScript, with no build step and no dependencies. Gi
 ```
 index.html      All page content: copy, song list, band bios, booking section
 styles.css      All styling; colors and fonts are CSS variables at the top
-script.js       Mobile menu and songbook filter (optional; the page works without it)
+script.js       Mobile menu and set list filter (optional; the page works without it)
 404.html        "Page not found" page (GitHub Pages serves it automatically)
 CNAME           Custom domain for GitHub Pages (oompah.me)
 .nojekyll       Tells GitHub Pages to serve files as-is (skips Jekyll)
@@ -17,7 +17,7 @@ assets/         Images: hero photo, member photos, social share image, favicons
 
 ## Editing content
 
-All content is in `index.html`. Edit it in the GitHub web editor (open the file, then the pencil icon) or locally. Every section has a marked comment (`<!-- SONGBOOK -->`, `<!-- THE BAND -->` and so on).
+All content is in `index.html`. Edit it in the GitHub web editor (open the file, then the pencil icon) or locally. Every section has a marked comment (`<!-- SET LIST -->`, `<!-- THE BAND -->` and so on).
 
 ### Add or remove a song
 

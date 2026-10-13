@@ -23,7 +23,7 @@ The palette and logo come from the OompahME brand asset set ("Deep Ink" directio
 
 | Role | Name | Hex | Used for |
 |---|---|---|---|
-| Dark | Deep ink green | `#143A26` | Text, borders, shadows, header, songbook and footer backgrounds |
+| Dark | Deep ink green | `#143A26` | Text, borders, shadows, header, set list and footer backgrounds |
 | Light | Warm paper | `#F2E8D0` | Page background, text on ink |
 | Light, raised | Soft paper | `#F8F1DF` | Small light surfaces |
 | Light, recessed | Aged paper | `#E0D2B5` | Placeholders, body text on ink |
@@ -116,7 +116,7 @@ Headings are set in sentence case, not all caps. Only the small mono labels (top
 | Booking title | Display | 800 | `clamp(40px, 5.4vw, 72px)` | Line-height 1.05 |
 | Booking button | Display | 700 | `clamp(22px, 3vw, 30px)` | Line-height 1.2 |
 | Ensemble title | Display | 700 | 32px | Line-height 1.1 |
-| Songbook genre | Display | 700 | 30px | Brass |
+| Set list genre | Display | 700 | 30px | Brass |
 | Member name | Display | 700 | 24px | Line-height 1.1 |
 | Occasions strip | Display | 700 | 22px | |
 | Hero lede | Body | 400 | 19px | Line-height 1.55, max width 500px |
@@ -159,7 +159,7 @@ Headings are set in sentence case, not all caps. Only the small mono labels (top
 
 | Section | Background |
 |---|---|
-| Header, occasions strip, songbook, footer | Ink |
+| Header, occasions strip, set list, footer | Ink |
 | Hero, booking | Brass |
 | Ensembles, band | Paper |
 
@@ -187,7 +187,7 @@ Headings are set in sentence case, not all caps. Only the small mono labels (top
 |---|---|
 | `index.html` | All page content |
 | `styles.css` | All styling. Colors and fonts are CSS variables at the top. |
-| `script.js` | Mobile menu and songbook filter |
+| `script.js` | Mobile menu and set list filter |
 | `assets/` | Hero photo (640, 1000, 1400px, JPG and WebP), member photos, ensemble photos (`assets/ensembles/`), social share image (`og-image.jpg`, 1200x630), favicons |
 
 The full brand guide, with typography revised to match the site (Fraunces, sentence case), is in `brand/OompahME_Final_Brand_Style_Guide.md`.
