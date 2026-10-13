@@ -15,37 +15,43 @@ This guide describes the visual system used on the website (`styles.css` is the 
 
 ---
 
-## 2. Color
+## 2. Color and logo
 
-Sample values for the logo green and tan were taken from a compressed image and are approximate. Replace them with exact values from the logo source file when available.
+The palette and logo come from the OompahME brand asset set ("Deep Ink" direction). Hex values below match `styles.css`.
 
 ### Palette
 
 | Role | Name | Hex | Used for |
 |---|---|---|---|
-| Primary | Brass | `#d4a037` | Hero and booking backgrounds, headings on dark, nav button |
-| Dark | Ink | `#14201a` | Text, borders, shadows, songbook and footer backgrounds |
-| Light | Paper (tan, from logo) | `#dfd7b3` | Page background |
-| Light, raised | Paper soft | `#ebe5c8` | Lighter surfaces such as cards |
-| Light, recessed | Paper deep | `#d0c8a2` | Recessed surfaces and placeholders |
-| Secondary | Ivy (green, from logo) | `#2b592b` | Button hover states, logo |
-| Body text | Muted | `#2a382c` | Body copy on light backgrounds |
-| Body text on dark | Muted dark | `#d9d3b8` | Body copy on ink backgrounds |
-| Accent | Brick | `#8a3a22` | Small labels, link hover |
+| Dark | Deep ink green | `#143A26` | Text, borders, shadows, header, songbook and footer backgrounds |
+| Light | Warm paper | `#F2E8D0` | Page background, text on ink |
+| Light, raised | Soft paper | `#F8F1DF` | Small light surfaces |
+| Light, recessed | Aged paper | `#E0D2B5` | Placeholders, body text on ink |
+| Primary accent | Brass | `#D4A441` | Hero and booking backgrounds, headings on dark, nav button |
+| Secondary | Ivy | `#4F6B3E` | Button hover fills |
+| Leather | Saddle tan | `#C7834E` | Logo leather tabs only |
+| Accent | Brick | `#C65A32` | Non-text accents only |
+| Small text accent | Brick, darker | `#9E3F26` | Member roles and link hover |
+| Body text | Muted | `#2c4636` | Body copy on light backgrounds |
+| Hairlines on dark | Line | `#2f5a43` | Dividers in dark sections |
 
 ### CSS variables
 
 ```css
 :root {
-  --mustard: #d4a037;      /* brass */
-  --ink: #14201a;
-  --paper: #dfd7b3;
-  --paper-soft: #ebe5c8;
-  --paper-deep: #d0c8a2;
-  --ivy: #2b592b;
-  --muted: #2a382c;        /* body copy on light */
-  --muted-dark: #d9d3b8;   /* body copy on ink */
-  --accent: #8a3a22;       /* brick */
+  --ink: #143A26;
+  --ink-deep: #14201a;
+  --paper: #F2E8D0;
+  --paper-soft: #F8F1DF;
+  --paper-deep: #E0D2B5;
+  --mustard: #D4A441;      /* brass */
+  --ivy: #4F6B3E;
+  --saddle: #C7834E;
+  --muted: #2c4636;
+  --muted-dark: #E0D2B5;
+  --line-dark: #2f5a43;
+  --accent: #C65A32;       /* non-text only */
+  --accent-text: #9E3F26;  /* small text */
 }
 ```
 
@@ -55,25 +61,37 @@ AA requires 4.5:1 for body text and 3:1 for large text (24px and up, or 19px bol
 
 | Pairing (text on background) | Ratio | Use |
 |---|---|---|
-| Ink on brass | 7.1:1 | OK for all text |
-| Ink on paper | 11.6:1 | OK for all text |
-| Body text on paper | 8.5:1 | OK for all text |
-| Body text on paper soft | 9.7:1 | OK for all text |
-| Paper on ink | 11.6:1 | OK for all text |
-| Brass on ink | 7.1:1 | OK for all text |
-| Muted dark on ink | 11.2:1 | OK for all text |
-| Paper on ivy | 5.7:1 | OK for all text |
-| Brick on paper | 5.4:1 | OK for all text |
-| Brick on paper soft | 6.1:1 | OK for all text |
-| Ivy on brass | 3.5:1 | Large display text only. Not for body or small text. |
-| Brass on ivy | 3.5:1 | Large display text only. |
-| Brass on paper | 1.6:1 | Do not use for text. Separate with a 2px ink border. |
+| Ink on paper | 10.4:1 | All text |
+| Paper on ink | 10.4:1 | All text |
+| Body text on paper | 8.5:1 | All text |
+| Aged paper on ink | 8.5:1 | All text |
+| Ink on brass | 5.5:1 | All text |
+| Brass on ink | 5.5:1 | All text, best for headings and accents |
+| Paper on ivy | 4.9:1 | All text |
+| Darker brick on paper | 5.4:1 | Small text |
+| Brick on paper | 3.5:1 | Large text and non-text accents only |
+| Saddle tan on paper | 2.5:1 | Logo illustration only |
 
 ### Color rules
 
-- Headlines and body on brass are ink. Never ivy.
-- Brass and paper are close in tone. Always divide them with a 2px ink border or an ink band.
-- Ivy is a fill color (buttons, hover). Use paper text on it.
+- Headlines and body on brass are ink.
+- Brass and paper are close in tone. Divide them with a 2px ink border or an ink band.
+- Ivy is a fill color (hover). Use paper text on it.
+
+### Logo
+
+The logo is custom artwork: OOMPAHME in heavy condensed block letters, with brass suspenders forming the H. The suspenders carry a pine tree and two stars, with saddle-tan leather tabs and brass fasteners. Always use the supplied artwork. Never retype the logo or recolor it.
+
+| Use | File |
+|---|---|
+| Header (wordmark on ink) | `assets/brand/wordmark-header.png` |
+| Footer badge (round, on ink) | `assets/brand/badge-footer.png` |
+| Favicon (suspenders H on ink) | `assets/favicon-32.png`, `assets/favicon-192.png` |
+| Apple touch icon (suspenders H on ink) | `assets/apple-touch-icon.png` |
+| Social share image (1200x630) | `assets/og-image.jpg` |
+
+- The full brand asset set (all wordmark, stacked and badge variants, light and dark, one-color, black and white) is kept outside the repo. The files above are web-sized exports of it.
+- Keep clear space of about half the wordmark cap height. Use the wordmark at 240px wide or larger, and the detailed badge at 96px or larger.
 
 ---
 
@@ -101,7 +119,6 @@ Headings are set in sentence case, not all caps. Only the small mono labels (top
 | Songbook genre | Display | 700 | 30px | Brass |
 | Member name | Display | 700 | 24px | Line-height 1.1 |
 | Occasions strip | Display | 700 | 22px | |
-| Logo | Display | 800 | 28px | "Oompah" in paper, "ME" in brass |
 | Hero lede | Body | 400 | 19px | Line-height 1.55, max width 500px |
 | Section intro | Body | 400 | 18px | Line-height 1.6 |
 | Booking text | Body | 400 | 18px | Line-height 1.6 |
@@ -173,4 +190,4 @@ Headings are set in sentence case, not all caps. Only the small mono labels (top
 | `script.js` | Mobile menu and songbook filter |
 | `assets/` | Hero photo (640, 1000, 1400px, JPG and WebP), member photos, ensemble photos (`assets/ensembles/`), social share image (`og-image.jpg`, 1200x630), favicons |
 
-The favicon (`assets/favicon.svg`) and apple touch icon are placeholders. The tree logo from the brand has not yet been added to the site.
+The full brand guide, with typography revised to match the site (Fraunces, sentence case), is in `brand/OompahME_Final_Brand_Style_Guide.md`.
