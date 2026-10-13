@@ -5,15 +5,19 @@
 
 :root {
   /* Palette */
-  --mustard: #d4a037;
-  --ink: #14201a;
-  --paper: #dfd7b3;
-  --paper-soft: #ebe5c8;
-  --paper-deep: #d0c8a2;
-  --muted: #2a382c;          /* body copy on light backgrounds */
-  --muted-dark: #d9d3b8;     /* body copy on ink backgrounds */
-  --accent: #8a3a22;         /* brick; 5.4:1 on paper */
-  --ivy: #2b592b;            /* logo green; hover fills, paper text on it is 5.7:1 */
+  --ink: #143A26;            /* deep ink green */
+  --ink-deep: #14201a;       /* high-contrast outlines */
+  --paper: #F2E8D0;          /* warm paper */
+  --paper-soft: #F8F1DF;
+  --paper-deep: #E0D2B5;
+  --mustard: #D4A441;        /* brass */
+  --ivy: #4F6B3E;            /* hover fills; paper text on it is 4.9:1 */
+  --saddle: #C7834E;
+  --muted: #2c4636;          /* body copy on light backgrounds, 8.5:1 on paper */
+  --muted-dark: #E0D2B5;     /* body copy on ink backgrounds, 8.5:1 */
+  --line-dark: #2f5a43;      /* hairlines on ink */
+  --accent: #C65A32;         /* brick: non-text accents only */
+  --accent-text: #9E3F26;    /* brick for small text; 5.4:1 on paper */
 
   /* Type */
   --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
@@ -47,7 +51,7 @@ body {
 
 img { display: block; max-width: 100%; height: auto; }
 a { color: var(--ink); }
-a:hover { color: var(--accent); }
+a:hover { color: var(--accent-text); }
 ul { list-style: none; margin: 0; padding: 0; }
 h1, h2, h3, p { margin: 0; }
 button, input, select, textarea { font: inherit; color: inherit; }
@@ -95,16 +99,9 @@ button, input, select, textarea { font: inherit; color: inherit; }
   display: flex; align-items: center; justify-content: space-between;
   gap: 20px; flex-wrap: wrap;
 }
-.logo {
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: 28px;
-  line-height: 1;
-  color: var(--paper);
-  text-decoration: none;
-}
-.logo span { color: var(--mustard); }
-.logo:hover { color: var(--paper); }
+.logo { display: block; line-height: 0; text-decoration: none; }
+.logo img { height: 46px; width: auto; }
+.logo-badge { width: 112px; height: 112px; }
 
 .site-nav {
   display: flex; gap: 28px; flex-wrap: wrap; align-items: center;
@@ -136,11 +133,11 @@ button, input, select, textarea { font: inherit; color: inherit; }
     display: none;
     flex-basis: 100%;
     flex-direction: column; align-items: stretch; gap: 0;
-    border-top: 1px solid var(--muted);
+    border-top: 1px solid var(--line-dark);
     padding-top: 8px;
   }
   .js .site-nav.is-open { display: flex; }
-  .js .site-nav a { padding: 14px 0; border-bottom: 1px solid var(--muted); }
+  .js .site-nav a { padding: 14px 0; border-bottom: 1px solid var(--line-dark); }
   .js .site-nav .site-nav__cta { margin-top: 14px; padding: 14px 16px; border-bottom: 0; text-align: center; }
 }
 
@@ -282,7 +279,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
   column-gap: 40px;
   align-content: start;
 }
-.genre__songs li { padding: 11px 0; border-bottom: 1px solid var(--muted); font-size: 16px; }
+.genre__songs li { padding: 11px 0; border-bottom: 1px solid var(--line-dark); font-size: 16px; }
 /* One-column layout: a 2-column span would force an implicit extra column */
 @media (max-width: 623.98px) {
   .genre__songs { grid-column: auto; }
@@ -312,7 +309,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
   font-family: var(--font-display); font-weight: 700; font-size: 24px;
   line-height: 1.1;
 }
-.member__role { font-family: var(--font-mono); font-size: 12px; letter-spacing: .3px; color: var(--accent); }
+.member__role { font-family: var(--font-mono); font-size: 12px; letter-spacing: .3px; color: var(--accent-text); }
 .member__bio { font-size: 14.5px; line-height: 1.55; color: var(--muted); text-wrap: pretty; }
 
 /* ---------- Booking ---------- */
@@ -357,7 +354,6 @@ button, input, select, textarea { font: inherit; color: inherit; }
 }
 .site-footer a { color: var(--mustard); }
 .site-footer a:hover { color: var(--paper); }
-.logo--footer { text-transform: none; letter-spacing: 0; }
 
 /* ---------- 404 ---------- */
 .notfound { min-height: calc(100vh - var(--header-h)); background: var(--mustard); }
