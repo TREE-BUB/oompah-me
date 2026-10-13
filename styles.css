@@ -331,9 +331,9 @@ button, input, select, textarea { font: inherit; color: inherit; }
   display: block;
   background: var(--ink); color: var(--paper);
   border: var(--rule);
-  padding: 36px 28px;
+  padding: 18px 24px;
   font-family: var(--font-display); font-weight: 700;
-  font-size: clamp(22px, 3vw, 30px); line-height: 1.2;
+  font-size: clamp(18px, 2.2vw, 22px); line-height: 1.2;
   text-align: center; text-decoration: none;
   overflow-wrap: anywhere;
 }
