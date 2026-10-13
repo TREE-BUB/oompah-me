@@ -74,7 +74,7 @@ The variables at the top of `styles.css` control everything:
 
 The mockup's accent `#8a6410` measured 4.48:1 against the paper background, just under the WCAG AA threshold of 4.5:1 for small text. `#87620f` is one step darker (4.63:1) and looks the same.
 
-Fonts come from Google Fonts: Big Shoulders Display (headlines), Archivo (body) and IBM Plex Mono (labels).
+Fonts come from Google Fonts: Fraunces (headlines), Archivo (body) and IBM Plex Mono (labels).
 
 ---
 
