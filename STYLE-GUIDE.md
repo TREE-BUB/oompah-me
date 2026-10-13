@@ -86,8 +86,9 @@ The logo is custom artwork: OOMPAHME in heavy condensed block letters, with bras
 |---|---|
 | Header (wordmark on ink) | `assets/brand/wordmark-header.png` |
 | Footer badge (round, on ink) | `assets/brand/badge-footer.png` |
-| Favicon | `assets/favicon-32.png`, `assets/favicon-192.png` |
-| Apple touch icon | `assets/apple-touch-icon.png` |
+| Favicon (suspenders H on ink) | `assets/favicon-32.png`, `assets/favicon-192.png` |
+| Apple touch icon (suspenders H on ink) | `assets/apple-touch-icon.png` |
+| Social share image (1200x630) | `assets/og-image.jpg` |
 
 - The full brand asset set (all wordmark, stacked and badge variants, light and dark, one-color, black and white) is kept outside the repo. The files above are web-sized exports of it.
 - Keep clear space of about half the wordmark cap height. Use the wordmark at 240px wide or larger, and the detailed badge at 96px or larger.
@@ -189,4 +190,4 @@ Headings are set in sentence case, not all caps. Only the small mono labels (top
 | `script.js` | Mobile menu and songbook filter |
 | `assets/` | Hero photo (640, 1000, 1400px, JPG and WebP), member photos, ensemble photos (`assets/ensembles/`), social share image (`og-image.jpg`, 1200x630), favicons |
 
-Typography here intentionally differs from the brand asset set's own guide, which specifies Big Shoulders Display in all caps. The site uses Fraunces in sentence case by decision.
+The full brand guide, with typography revised to match the site (Fraunces, sentence case), is in `brand/OompahME_Final_Brand_Style_Guide.md`.

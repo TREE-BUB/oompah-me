@@ -138,7 +138,7 @@ The source photos were resized and re-encoded:
 | File | Size | Notes |
 |---|---|---|
 | `assets/band-quintet-{640,1000,1400}.{webp,jpg}` | 4:5 crop | Hero; the browser picks a size via `srcset` |
-| `assets/og-image.jpg` | 1200×630 | Link previews (Facebook, iMessage, Slack, etc.) |
+| `assets/og-image.jpg` | 1200×630 | Link previews (Facebook, iMessage, Slack, etc.): wordmark, tagline and the quintet photo |
 | `assets/members/*.{webp,jpg}` | ≤600px wide | Several originals are smaller (Mike 277px, Chris 350px); replace with higher-resolution photos for sharp results on retina screens |
 | `assets/brand/wordmark-header.png`, `assets/brand/badge-footer.png` | 308×84, 240×240 | Header wordmark and footer badge, exported from the brand asset set on the ink background |
-| `assets/favicon-32.png`, `assets/favicon-192.png`, `assets/apple-touch-icon.png` | | Icons made from the round badge |
+| `assets/favicon-32.png`, `assets/favicon-192.png`, `assets/apple-touch-icon.png` | | Icons: the suspenders H on ink, cut from the wordmark |
