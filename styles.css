@@ -223,6 +223,13 @@ button, input, select, textarea { font: inherit; color: inherit; }
   display: flex; flex-direction: column; gap: 16px;
   border-bottom: 1px solid var(--ink);
 }
+.ensemble__photo {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border: var(--rule);
+  background: var(--paper-deep);
+}
 .ensemble__title {
   font-family: var(--font-display); font-weight: 700; font-size: 32px;
   line-height: 1.1;
