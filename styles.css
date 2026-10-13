@@ -5,14 +5,15 @@
 
 :root {
   /* Palette */
-  --mustard: #dba72a;
-  --ink: #151310;
-  --paper: #f2ead8;
-  --paper-soft: #fbf6ea;
-  --paper-deep: #e6dcc6;
-  --muted: #3a332a;          /* body copy on light backgrounds */
-  --muted-dark: #cfc5b2;     /* body copy on ink backgrounds */
-  --accent: #87620f;         /* labels on paper; mockup #8a6410 darkened 1 step to clear WCAG AA (4.6:1) */
+  --mustard: #d4a037;
+  --ink: #14201a;
+  --paper: #dfd7b3;
+  --paper-soft: #ebe5c8;
+  --paper-deep: #d0c8a2;
+  --muted: #2a382c;          /* body copy on light backgrounds */
+  --muted-dark: #d9d3b8;     /* body copy on ink backgrounds */
+  --accent: #8a3a22;         /* brick; 5.4:1 on paper */
+  --ivy: #2b592b;            /* logo green; hover fills, paper text on it is 5.7:1 */
 
   /* Type */
   --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
@@ -190,7 +191,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
   text-decoration: none;
 }
 .btn--solid { background: var(--ink); color: var(--paper); }
-.btn--solid:hover { background: var(--muted); color: var(--paper); }
+.btn--solid:hover { background: var(--ivy); color: var(--paper); }
 .btn--outline { color: var(--ink); }
 .btn--outline:hover { background: var(--ink); color: var(--mustard); }
 
@@ -341,7 +342,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
   text-align: center; text-decoration: none;
   overflow-wrap: anywhere;
 }
-.booking__button:hover { background: var(--muted); color: var(--paper); }
+.booking__button:hover { background: var(--ivy); color: var(--paper); }
 .booking__phone { font-size: 20px; text-align: center; }
 .booking__phone a { font-weight: 600; }
 .booking__related { margin-top: 12px; padding-top: 20px; border-top: var(--rule); font-size: 16px; line-height: 1.5; text-align: center; }
