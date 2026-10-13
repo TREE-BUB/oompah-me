@@ -65,7 +65,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
   position: absolute; left: 12px; top: -100px; z-index: 100;
   background: var(--mustard); color: var(--ink);
   border: var(--rule); padding: 10px 16px;
-  font-family: var(--font-mono); font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px;
+  font-family: var(--font-mono); font-size: 13px; letter-spacing: .3px;
   text-decoration: none;
 }
 .skip-link:focus { top: 12px; }
@@ -81,8 +81,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .eyebrow {
   font-family: var(--font-mono);
   font-size: 12px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  letter-spacing: .3px;
 }
 .eyebrow--mustard { color: var(--mustard); }
 
@@ -111,8 +110,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
   display: flex; gap: 28px; flex-wrap: wrap; align-items: center;
   font-family: var(--font-mono);
   font-size: 13px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
+  letter-spacing: .3px;
 }
 .site-nav a { color: var(--paper); text-decoration: none; }
 .site-nav a:hover { color: var(--mustard); }
@@ -125,7 +123,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
   border: 1px solid var(--mustard);
   color: var(--paper);
   font-family: var(--font-mono);
-  font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase;
+  font-size: 12px; letter-spacing: .3px;
   padding: 9px 14px;
   cursor: pointer;
 }
@@ -153,7 +151,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
   display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
   border-top: var(--rule); border-bottom: 1px solid var(--ink);
   padding: 10px 0;
-  font-family: var(--font-mono); font-size: 12px; letter-spacing: 2px; text-transform: uppercase;
+  font-family: var(--font-mono); font-size: 12px; letter-spacing: .3px;
 }
 .hero__grid {
   display: grid;
@@ -238,7 +236,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .ensemble__body { font-size: 16px; line-height: 1.6; color: var(--muted); text-wrap: pretty; }
 .ensemble__good {
   margin-top: auto;
-  font-family: var(--font-mono); font-size: 12px; letter-spacing: 1px; text-transform: uppercase;
+  font-family: var(--font-mono); font-size: 12px; letter-spacing: .3px;
 }
 
 /* ---------- Songbook ---------- */
@@ -252,7 +250,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .songbook__lede { font-size: 17px; line-height: 1.55; color: var(--muted-dark); }
 .songbook__filters { display: flex; gap: 8px; flex-wrap: wrap; }
 .filter {
-  font-family: var(--font-mono); font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase;
+  font-family: var(--font-mono); font-size: 12px; letter-spacing: .3px;
   padding: 10px 15px;
   cursor: pointer;
   border: 1px solid var(--mustard);
@@ -314,7 +312,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
   font-family: var(--font-display); font-weight: 700; font-size: 24px;
   line-height: 1.1;
 }
-.member__role { font-family: var(--font-mono); font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: var(--accent); }
+.member__role { font-family: var(--font-mono); font-size: 12px; letter-spacing: .3px; color: var(--accent); }
 .member__bio { font-size: 14.5px; line-height: 1.55; color: var(--muted); text-wrap: pretty; }
 
 /* ---------- Booking ---------- */
@@ -355,7 +353,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
   padding-block: 40px;
   display: flex; justify-content: space-between; align-items: center;
   gap: 20px; flex-wrap: wrap;
-  font-family: var(--font-mono); font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase;
+  font-family: var(--font-mono); font-size: 12px; letter-spacing: .3px;
 }
 .site-footer a { color: var(--mustard); }
 .site-footer a:hover { color: var(--paper); }
