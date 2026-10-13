@@ -59,7 +59,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 
 :focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
 .site-header :focus-visible,
-.songbook :focus-visible,
+.setlist :focus-visible,
 .site-footer :focus-visible { outline-color: var(--mustard); }
 
 .wrap { max-width: var(--max); margin-inline: auto; padding-inline: var(--gutter); }
@@ -236,16 +236,16 @@ button, input, select, textarea { font: inherit; color: inherit; }
   font-family: var(--font-mono); font-size: 12px; letter-spacing: .3px;
 }
 
-/* ---------- Songbook ---------- */
-.songbook { background: var(--ink); color: var(--paper); }
-.songbook__head {
+/* ---------- Set list ---------- */
+.setlist { background: var(--ink); color: var(--paper); }
+.setlist__head {
   display: flex; justify-content: space-between; align-items: flex-end;
   gap: 28px; flex-wrap: wrap;
   margin-bottom: 40px;
 }
-.songbook__intro { display: flex; flex-direction: column; gap: 14px; max-width: 620px; }
-.songbook__lede { font-size: 17px; line-height: 1.55; color: var(--muted-dark); }
-.songbook__filters { display: flex; gap: 8px; flex-wrap: wrap; }
+.setlist__intro { display: flex; flex-direction: column; gap: 14px; max-width: 620px; }
+.setlist__lede { font-size: 17px; line-height: 1.55; color: var(--muted-dark); }
+.setlist__filters { display: flex; gap: 8px; flex-wrap: wrap; }
 .filter {
   font-family: var(--font-mono); font-size: 12px; letter-spacing: .3px;
   padding: 10px 15px;
@@ -257,7 +257,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .filter:hover { background: rgba(219, 167, 42, .15); }
 .filter[aria-pressed="true"] { background: var(--mustard); color: var(--ink); }
 
-.songbook__groups { display: flex; flex-direction: column; gap: 48px; }
+.setlist__groups { display: flex; flex-direction: column; gap: 48px; }
 .genre {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
@@ -358,3 +358,30 @@ button, input, select, textarea { font: inherit; color: inherit; }
 /* ---------- 404 ---------- */
 .notfound { min-height: calc(100vh - var(--header-h)); background: var(--mustard); }
 .notfound__inner { display: flex; flex-direction: column; gap: 28px; align-items: flex-start; }
+
+/* ---------- Small screens ---------- */
+@media (max-width: 639.98px) {
+  /* Larger header wordmark and footer badge */
+  .logo img { height: 56px; }
+  .logo-badge { width: 180px; height: 180px; }
+  .site-footer__inner {
+    flex-direction: column; justify-content: center; text-align: center;
+    gap: 16px; padding-block: 48px;
+    font-size: 14px;
+  }
+
+  /* Info strip: centered stack so it reads as a label, not a row of links */
+  .hero__strip {
+    flex-direction: column; align-items: center; text-align: center;
+    gap: 6px; padding: 14px 0;
+    font-size: 13px;
+  }
+  .hero__strip span:last-child { font-weight: 500; }
+
+  /* Occasions: centered wrap instead of ragged justified rows */
+  .occasions__list {
+    justify-content: center; text-align: center;
+    gap: 10px 24px; padding-block: 28px;
+    font-size: 20px;
+  }
+}

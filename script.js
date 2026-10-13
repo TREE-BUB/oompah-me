@@ -26,8 +26,8 @@
     });
   }
 
-  /* ---------- Songbook genre filter ---------- */
-  var filterBar = document.querySelector('.songbook__filters');
+  /* ---------- Set list genre filter ---------- */
+  var filterBar = document.querySelector('.setlist__filters');
   var groups = Array.prototype.slice.call(document.querySelectorAll('.genre[data-genre]'));
 
   // Keep "N selections" in sync with the list, so editors only touch the <li>s.
@@ -47,7 +47,7 @@
       b.textContent = label;
       b.dataset.filter = value;
       b.setAttribute('aria-pressed', value === 'All' ? 'true' : 'false');
-      b.setAttribute('aria-controls', 'songbook-groups');
+      b.setAttribute('aria-controls', 'setlist-groups');
       filterBar.appendChild(b);
       buttons.push(b);
     }
@@ -57,8 +57,8 @@
       addButton(g.dataset.genre, g.dataset.label || g.dataset.genre);
     });
 
-    var container = document.querySelector('.songbook__groups');
-    if (container) container.id = 'songbook-groups';
+    var container = document.querySelector('.setlist__groups');
+    if (container) container.id = 'setlist-groups';
 
     filterBar.addEventListener('click', function (e) {
       var btn = e.target.closest('.filter');
