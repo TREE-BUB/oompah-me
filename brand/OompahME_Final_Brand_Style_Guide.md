@@ -4,7 +4,7 @@
 **Status:** Approved visual direction; production artwork specifications  
 **Website:** https://oompah.me  
 **Home:** Portland, Maine  
-**Brand:** Polka quintet and flexible live-music ensemble
+**Brand:** Polka band and flexible live-music ensemble
 
 This document supersedes the earlier proposed color palette and visual treatments. The approved identity is the **Deep Ink (#2)** direction: condensed OOMPAHME lettering, with the **H formed by brass suspenders**, a pine-and-stars center badge, and **lightened saddle-tan leather tabs**. The latest flat, simplified H shape is the canonical design for *all* wordmarks, badges, and related marks.
 
@@ -18,14 +18,14 @@ This document supersedes the earlier proposed color palette and visual treatment
 
 - **Look:** An old brass-band handbill meets a Maine civic-music emblem: retro, structured, warm, and memorable.
 - **Personality:** Serious musicians who have fun. Confident but unpretentious; festive without becoming kitschy.
-- **Positioning:** A Portland-based polka quintet that grew out of jazz musicianship, with the versatility and network to assemble musicians for weddings, festivals, chamber music, and other events.
+- **Positioning:** A Portland-based polka band that grew out of jazz musicianship, with the versatility and network to assemble musicians for weddings, festivals, chamber music, and other events.
 - **Visual cues:** Bold condensed typography, paper and ink, brass-colored hardware, two stars and a pine tree, flat geometric shapes, square corners, rules, and restrained printmaking references.
 
 ### Name and terminology
 
 - Brand name in prose: **OompahME**.
 - Logo lettering: **OOMPAHME**, with suspenders substituting for the **H**.
-- Primary descriptor: **POLKA QUINTET · PORTLAND, MAINE**.
+- Primary descriptor: **POLKA BAND · PORTLAND, MAINE**.
 - Optional repertoire line: **POLKA · JAZZ · CHAMBER · HOLIDAY**.
 - Avoid presenting the band as only an Oktoberfest act; the identity should also feel credible for weddings, jazz, and chamber performances.
 
@@ -151,7 +151,7 @@ The circular artwork should be optically centered, with enough padding that plat
 
 Create consistent versions using the same wordmark master:
 
-- **Horizontal plus descriptor:** Wordmark above `POLKA QUINTET · PORTLAND, MAINE` in IBM Plex Mono or the approved label style.
+- **Horizontal plus descriptor:** Wordmark above `POLKA BAND · PORTLAND, MAINE` in IBM Plex Mono or the approved label style.
 - **Horizontal plus repertoire:** Wordmark above `POLKA · JAZZ · CHAMBER · HOLIDAY`.
 - **Stacked:** `OOMPA` over the custom suspenders-H plus `ME`, preserving reading order and making the H clearly belong to the second line.
 - **Poster lockup:** Primary wordmark, thin horizontal rule, then the ensemble/location descriptor; suitable for vertical posters and merchandise.
