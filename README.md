@@ -1,6 +1,6 @@
 # oompah.me
 
-Static website for **OompahME**, a polka quintet and musical contractor in Portland, Maine.
+Static website for **OompahME**, a polka band and musical contractor in Portland, Maine.
 It is plain HTML, CSS and JavaScript, with no build step and no dependencies. GitHub Pages serves the files exactly as they are in the repo.
 
 ```
@@ -46,7 +46,7 @@ Find the `SONG LIST` comment in `index.html`. Each genre is a block like this:
 
 ### Change a band member
 
-Each member is an `<li class="member">` in the `THE BAND` section. Edit the name, role and bio text directly.
+Each member is an `<li class="member">` in the `THE BAND` section, which appears on the page under the heading "Musicians" (no intro paragraph). Edit the name, role and bio text directly. Members display in source order, so move an `<li>` to change where someone appears (Cleaves is currently last).
 
 To replace a photo:
 1. Export a JPEG about **600px wide** (portrait or square both work; the frame crops to 4:5).
@@ -139,6 +139,7 @@ The source photos were resized and re-encoded:
 |---|---|---|
 | `assets/band-quintet-{640,1000,1400}.{webp,jpg}` | 4:5 crop | Hero; the browser picks a size via `srcset` |
 | `assets/og-image.jpg` | 1200×630 | Link previews (Facebook, iMessage, Slack, etc.): wordmark, tagline and the quintet photo |
+| `assets/ensembles/quintet.{webp,jpg}` | 1200×844 | OompahME card photo (Jimi and Chris performing); displayed at a 3:2 crop |
 | `assets/members/*.{webp,jpg}` | ≤600px wide | Several originals are smaller (Mike 277px, Chris 350px); replace with higher-resolution photos for sharp results on retina screens |
 | `assets/brand/wordmark-header.png`, `assets/brand/badge-footer.png` | 308×84, 240×240 | Header wordmark and footer badge, exported from the brand asset set on the ink background |
 | `assets/favicon-32.png`, `assets/favicon-192.png`, `assets/apple-touch-icon.png` | | Icons: the suspenders H on ink, cut from the wordmark |
