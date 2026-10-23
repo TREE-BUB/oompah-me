@@ -1,6 +1,6 @@
 # OompahME Style Guide
 
-Polka quintet and musical contractor, Portland, Maine. https://oompah.me
+Polka band and musical contractor, Portland, Maine. https://oompah.me
 
 This guide describes the visual system used on the website (`styles.css` is the source of truth).
 
@@ -10,8 +10,8 @@ This guide describes the visual system used on the website (`styles.css` is the 
 
 - **Look:** a retro brass-band handbill. Square corners, hard 2px ink borders, solid offset shadows, and a warm serif for headings in sentence case.
 - **Tone of voice:** serious musicians who have fun. Warm and confident, not arrogant, not kitschy.
-- **Positioning:** a group of musicians who met playing jazz, dove into polka, and can play almost anything. A core quintet backed by a wide network of freelance musicians.
-- **Core quintet:** Jimi Michel (trumpet, leader), Cleaves (clarinet), Mar Fink (trombone), Chris Beaven (banjo, pocket trumpet, co-leader), Mike Dank (drums).
+- **Positioning:** a group of musicians who met playing jazz, dove into polka, and can play almost anything. A core group of five backed by a wide network of freelance musicians.
+- **Musicians** (page order): Jimi Michel (trumpet, leader), Mar Fink (trombone), Chris Beaven (banjo, pocket trumpet, co-leader), Mike Dank (drums), Cleaves (clarinet).
 
 ---
 
